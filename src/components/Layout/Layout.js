@@ -1,12 +1,15 @@
 import React from 'react';
 
-import Aux from '../../hoc/Aux';
+import Auxilary from '../../hoc/Auxilary.JS';
 import classes from './Layout.css';
 import Toolbar from '../Navigation/Toolbar';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer' ;
 
 const layout = ( props ) => (
-    <Aux>
+    <Auxilary>
         <Toolbar />
+
+        <SideDrawer/>
 
 
 
@@ -14,7 +17,7 @@ const layout = ( props ) => (
         <main className={classes.Content}>
             {props.children}
         </main>
-    </Aux>
+    </Auxilary>
 );
 
 export default layout;
